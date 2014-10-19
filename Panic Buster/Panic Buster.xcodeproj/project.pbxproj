@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		477CBE7819F3903300E2733D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CBE7719F3903300E2733D /* AppDelegate.swift */; };
+		477CBE7B19F3903300E2733D /* Panic_Buster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 477CBE7919F3903300E2733D /* Panic_Buster.xcdatamodeld */; };
+		477CBE7D19F3903300E2733D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CBE7C19F3903300E2733D /* ViewController.swift */; };
+		477CBE8019F3903300E2733D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 477CBE7E19F3903300E2733D /* Main.storyboard */; };
+		477CBE8219F3903300E2733D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 477CBE8119F3903300E2733D /* Images.xcassets */; };
+		477CBE8519F3903300E2733D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 477CBE8319F3903300E2733D /* LaunchScreen.xib */; };
+		477CBE9119F3903300E2733D /* Panic_BusterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477CBE9019F3903300E2733D /* Panic_BusterTests.swift */; };
+		477CBE9D19F39A7600E2733D /* icon 2 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 477CBE9A19F39A7600E2733D /* icon 2 copy.png */; };
+		477CBE9E19F39A7600E2733D /* icon copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 477CBE9B19F39A7600E2733D /* icon copy.png */; };
+		477CBE9F19F39A7600E2733D /* icon 3 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 477CBE9C19F39A7600E2733D /* icon 3 copy.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		477CBE8B19F3903300E2733D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 477CBE6A19F3903300E2733D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 477CBE7119F3903300E2733D;
+			remoteInfo = "Panic Buster";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		477CBE7219F3903300E2733D /* Panic Buster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Panic Buster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		477CBE7619F3903300E2733D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		477CBE7719F3903300E2733D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		477CBE7A19F3903300E2733D /* Panic_Buster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Panic_Buster.xcdatamodel; sourceTree = "<group>"; };
+		477CBE7C19F3903300E2733D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		477CBE7F19F3903300E2733D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		477CBE8119F3903300E2733D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		477CBE8419F3903300E2733D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		477CBE8A19F3903300E2733D /* Panic BusterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Panic BusterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		477CBE8F19F3903300E2733D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		477CBE9019F3903300E2733D /* Panic_BusterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panic_BusterTests.swift; sourceTree = "<group>"; };
+		477CBE9A19F39A7600E2733D /* icon 2 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon 2 copy.png"; sourceTree = "<group>"; };
+		477CBE9B19F39A7600E2733D /* icon copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon copy.png"; sourceTree = "<group>"; };
+		477CBE9C19F39A7600E2733D /* icon 3 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon 3 copy.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		477CBE6F19F3903300E2733D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		477CBE8719F3903300E2733D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		477CBE6919F3903300E2733D = {
+			isa = PBXGroup;
+			children = (
+				477CBE7419F3903300E2733D /* Panic Buster */,
+				477CBE8D19F3903300E2733D /* Panic BusterTests */,
+				477CBE7319F3903300E2733D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		477CBE7319F3903300E2733D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				477CBE7219F3903300E2733D /* Panic Buster.app */,
+				477CBE8A19F3903300E2733D /* Panic BusterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		477CBE7419F3903300E2733D /* Panic Buster */ = {
+			isa = PBXGroup;
+			children = (
+				477CBE7719F3903300E2733D /* AppDelegate.swift */,
+				477CBE7C19F3903300E2733D /* ViewController.swift */,
+				477CBE7E19F3903300E2733D /* Main.storyboard */,
+				477CBE8119F3903300E2733D /* Images.xcassets */,
+				477CBE8319F3903300E2733D /* LaunchScreen.xib */,
+				477CBE7919F3903300E2733D /* Panic_Buster.xcdatamodeld */,
+				477CBE7519F3903300E2733D /* Supporting Files */,
+			);
+			path = "Panic Buster";
+			sourceTree = "<group>";
+		};
+		477CBE7519F3903300E2733D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				477CBE9A19F39A7600E2733D /* icon 2 copy.png */,
+				477CBE9B19F39A7600E2733D /* icon copy.png */,
+				477CBE9C19F39A7600E2733D /* icon 3 copy.png */,
+				477CBE7619F3903300E2733D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		477CBE8D19F3903300E2733D /* Panic BusterTests */ = {
+			isa = PBXGroup;
+			children = (
+				477CBE9019F3903300E2733D /* Panic_BusterTests.swift */,
+				477CBE8E19F3903300E2733D /* Supporting Files */,
+			);
+			path = "Panic BusterTests";
+			sourceTree = "<group>";
+		};
+		477CBE8E19F3903300E2733D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				477CBE8F19F3903300E2733D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		477CBE7119F3903300E2733D /* Panic Buster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 477CBE9419F3903300E2733D /* Build configuration list for PBXNativeTarget "Panic Buster" */;
+			buildPhases = (
+				477CBE6E19F3903300E2733D /* Sources */,
+				477CBE6F19F3903300E2733D /* Frameworks */,
+				477CBE7019F3903300E2733D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Panic Buster";
+			productName = "Panic Buster";
+			productReference = 477CBE7219F3903300E2733D /* Panic Buster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		477CBE8919F3903300E2733D /* Panic BusterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 477CBE9719F3903300E2733D /* Build configuration list for PBXNativeTarget "Panic BusterTests" */;
+			buildPhases = (
+				477CBE8619F3903300E2733D /* Sources */,
+				477CBE8719F3903300E2733D /* Frameworks */,
+				477CBE8819F3903300E2733D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				477CBE8C19F3903300E2733D /* PBXTargetDependency */,
+			);
+			name = "Panic BusterTests";
+			productName = "Panic BusterTests";
+			productReference = 477CBE8A19F3903300E2733D /* Panic BusterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		477CBE6A19F3903300E2733D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Clement Hathaway";
+				TargetAttributes = {
+					477CBE7119F3903300E2733D = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					477CBE8919F3903300E2733D = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 477CBE7119F3903300E2733D;
+					};
+				};
+			};
+			buildConfigurationList = 477CBE6D19F3903300E2733D /* Build configuration list for PBXProject "Panic Buster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 477CBE6919F3903300E2733D;
+			productRefGroup = 477CBE7319F3903300E2733D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				477CBE7119F3903300E2733D /* Panic Buster */,
+				477CBE8919F3903300E2733D /* Panic BusterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		477CBE7019F3903300E2733D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				477CBE9D19F39A7600E2733D /* icon 2 copy.png in Resources */,
+				477CBE9F19F39A7600E2733D /* icon 3 copy.png in Resources */,
+				477CBE8019F3903300E2733D /* Main.storyboard in Resources */,
+				477CBE8519F3903300E2733D /* LaunchScreen.xib in Resources */,
+				477CBE8219F3903300E2733D /* Images.xcassets in Resources */,
+				477CBE9E19F39A7600E2733D /* icon copy.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		477CBE8819F3903300E2733D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		477CBE6E19F3903300E2733D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				477CBE7D19F3903300E2733D /* ViewController.swift in Sources */,
+				477CBE7B19F3903300E2733D /* Panic_Buster.xcdatamodeld in Sources */,
+				477CBE7819F3903300E2733D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		477CBE8619F3903300E2733D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				477CBE9119F3903300E2733D /* Panic_BusterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		477CBE8C19F3903300E2733D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 477CBE7119F3903300E2733D /* Panic Buster */;
+			targetProxy = 477CBE8B19F3903300E2733D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		477CBE7E19F3903300E2733D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				477CBE7F19F3903300E2733D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		477CBE8319F3903300E2733D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				477CBE8419F3903300E2733D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		477CBE9219F3903300E2733D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		477CBE9319F3903300E2733D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		477CBE9519F3903300E2733D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Panic Buster/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		477CBE9619F3903300E2733D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Panic Buster/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		477CBE9819F3903300E2733D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Panic BusterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Panic Buster.app/Panic Buster";
+			};
+			name = Debug;
+		};
+		477CBE9919F3903300E2733D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Panic BusterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Panic Buster.app/Panic Buster";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		477CBE6D19F3903300E2733D /* Build configuration list for PBXProject "Panic Buster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				477CBE9219F3903300E2733D /* Debug */,
+				477CBE9319F3903300E2733D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		477CBE9419F3903300E2733D /* Build configuration list for PBXNativeTarget "Panic Buster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				477CBE9519F3903300E2733D /* Debug */,
+				477CBE9619F3903300E2733D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		477CBE9719F3903300E2733D /* Build configuration list for PBXNativeTarget "Panic BusterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				477CBE9819F3903300E2733D /* Debug */,
+				477CBE9919F3903300E2733D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		477CBE7919F3903300E2733D /* Panic_Buster.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				477CBE7A19F3903300E2733D /* Panic_Buster.xcdatamodel */,
+			);
+			currentVersion = 477CBE7A19F3903300E2733D /* Panic_Buster.xcdatamodel */;
+			path = Panic_Buster.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 477CBE6A19F3903300E2733D /* Project object */;
+}
