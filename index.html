@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
+    <title>Simple Map</title>
+    <link rel="stylesheet" href="http://js.arcgis.com/3.11/esri/css/esri.css">
+    <style>
+      html, body, #map {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #FFF;
+        overflow: hidden;
+        font-family: "Trebuchet MS";
+      }
+    </style>
+    <script src="jquery-1.11.1.js" ></script>
+    <script src="http://js.arcgis.com/3.11/"></script>
+    <script>
+      var map;
+	  
+	  var data = {};
+	  var markers = {};
+	  
+	  var selectedKey;
+	  
+      require(["esri/map", 
+	  "esri/graphic",
+	  "esri/symbols/SimpleMarkerSymbol",
+	  "esri/symbols/SimpleFillSymbol",
+	  "esri/geometry/Point",
+	  "esri/geometry/Circle",
+	  "esri/Color",
+	  "dojo/dom",
+	   "dojo/on",
+	  "dojo/domReady!"], function(Map, Graphic, SimpleMarkerSymbol, SimpleFillSymbol, Point, Circle, Color, dom, on) {
+        map = new Map("map", {
+          basemap: "topo",
+          center: [-0.1275, 51.507222],
+          zoom: 15
+        });
+		  
+		function ShowLocation(entry) {
+			var X = entry[0];
+			var Y = entry[1];
+			var size = entry[2];
+			
+			var point = new Point(X, Y);	
+			
+			var markerSymbol = SimpleMarkerSymbol();
+			markerSymbol.setColor(new Color({r:255, g:0, b:0, a:1}));
+			
+			var circle = new Circle({
+				center: point,
+				geodesic: true,
+				radius: size
+			});			
+			var circleSymbol = new SimpleFillSymbol().setColor(new Color({r:0, g:0, b:200, a:0.3}));
+			var circleGraphic = new Graphic(circle, circleSymbol);
+			
+			var markerGraphic = new Graphic(point, markerSymbol);
+			markerGraphic.setAttributes({"lat": Y, "lon": X});
+			
+			map.graphics.add(circleGraphic);
+			map.graphics.add(markerGraphic);
+		}
+		
+		map.on("load", function() {
+			setInterval(function() {
+				$.ajax({
+					type: 'POST',
+					url: "ajax.php",
+				}).done(function(receivedData) {					
+					if (receivedData) {
+						receivedData = JSON.parse(receivedData);					
+						data[receivedData.id] = [receivedData.glong, receivedData.glat, receivedData.hacc];
+					}
+					
+					map.graphics.clear();
+					for (key in data) {
+						ShowLocation(data[key])
+					}
+				});				
+			}, 5000);
+			map.graphics.on("click", function(evt) {
+				selectedMarkerAttributes = evt.graphic.attributes;
+				alert("LAT: "+selectedMarkerAttributes.lat+" ; LON: "+selectedMarkerAttributes.lon);
+			});
+		});
+	  
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="map"></div>
+  </body>
+</html>
